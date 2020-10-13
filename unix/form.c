@@ -80,7 +80,7 @@ void uiFormAppend(uiForm *f, const char *label, uiControl *c, int stretchy)
 		gtk_widget_set_valign(fc.label, GTK_ALIGN_START);
 	else
 		gtk_widget_set_valign(fc.label, GTK_ALIGN_CENTER);
-	gtk_style_context_add_class(gtk_widget_get_style_context(fc.label), "dim-label");
+	//gtk_style_context_add_class(gtk_widget_get_style_context(fc.label), "dim-label");
 	row = f->children->len;
 	gtk_grid_attach(f->grid, fc.label,
 		0, row,

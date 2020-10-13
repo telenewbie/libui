@@ -7,7 +7,7 @@ project('libui', ['c', 'cpp'],
 	meson_version: '>=0.48.0',
 	default_options: [
 		'buildtype=debug',				# build debug by default
-		'default_library=shared',			# build shared libraries by default
+		'default_library=static',			# build shared libraries by default
 		'layout=flat',					# keep all outputs together by default
 
 		# these are forced options, but meson doesn't let me set these up separately before I call project() (TODO https://github.com/mesonbuild/meson/issues/5179)
@@ -174,3 +174,4 @@ if libui_mode == 'static'
 endif
 subdir('test')
 subdir('examples')
+subdir('elevoc')
